@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import header from '../styles/header.css';
+
 class App extends Component {
   renderHeader() {
     return (
-      <ul>
+      <ul ClassName="header">
         <li>Home</li>
-        <h2>Fantasy Rankings</h2>
+        <li>Fantasy Rankings</li>
         <li>Log In</li>
       </ul>
     );
