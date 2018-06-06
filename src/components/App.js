@@ -26,6 +26,7 @@ class App extends Component {
       <div>
         {this.renderHeader()}
         <Route path="/login" component={Login} />
+        <Route path="/" exact component={Landing} />
       </div>
     );
   }
