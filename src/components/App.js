@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
 
 import header from '../styles/header.css';
 
@@ -8,7 +9,9 @@ class App extends Component {
       <ul ClassName="header">
         <li>Home</li>
         <li>Fantasy Rankings</li>
-        <li>Log In</li>
+        <li>
+          <Link to="/login">Log In</Link>
+        </li>
       </ul>
     );
   }
@@ -18,13 +21,7 @@ class App extends Component {
     return (
       <div>
         {this.renderHeader()}
-        <div>
-          <p>
-            Welcome to uRate, the premier place for fantasy sports players to
-            compare and keep track of rest of season rankings!
-          </p>
-          <button>Sign Up</button>
-        </div>
+
       </div>
     );
   }
