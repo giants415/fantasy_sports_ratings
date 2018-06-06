@@ -6,8 +6,12 @@ class Login extends Component {
     return (
       <div>
         <div>
-          <input type='text' label='username'>
-          <input type='text' label='password'>
+          <label for='username'>Username</label>
+          <input type='text' id='username'/>
+        </div>
+        <div>
+          <label for='password'>Password</label>
+          <input type='text' id='password'/>
         </div>
       </div>
     );
