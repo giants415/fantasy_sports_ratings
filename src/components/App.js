@@ -9,7 +9,7 @@ import header from '../styles/header.css';
 class App extends Component {
   renderHeader() {
     return (
-      <ul ClassName="header">
+      <ul className="header">
         <li>
           <Link to="/">Home</Link>
         </li>
