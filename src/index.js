@@ -5,7 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import App from './components/App';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter className="container-fluid">
     <Route path="/" component={App} />
   </BrowserRouter>
   , document.getElementById('root')
