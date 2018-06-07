@@ -5,7 +5,7 @@ class Landing extends Component {
 
   render() {
     return (
-      <div>
+      <div className="col-lg-4 offset-lg-4 text-center">
         <p>
           Welcome to uRate, the premier place for fantasy sports players to
           compare and keep track of rest of season rankings!
