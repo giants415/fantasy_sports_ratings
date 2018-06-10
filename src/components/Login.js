@@ -4,13 +4,13 @@ class Login extends Component {
 
   render() {
     return (
-      <form>
+      <form className='col-lg-4 offset-lg-4'>
         <div>
-          <label for='username'>Username</label>
+          <label>Username</label>
           <input type='text' id='username'/>
         </div>
         <div>
-          <label for='password'>Password</label>
+          <label>Password</label>
           <input type='text' id='password'/>
         </div>
         <button type='button'>Login</button>
