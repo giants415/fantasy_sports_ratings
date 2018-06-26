@@ -36,7 +36,11 @@ class Signup extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return state;
+}
+
 export default compose(
-  connect(null, actions),
+  connect(mapStateToProps, actions),
   reduxForm({ form: 'signup' })
 )(Signup);
