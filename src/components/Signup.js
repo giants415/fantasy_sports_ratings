@@ -8,21 +8,35 @@ class Signup extends Component {
 
 
   render() {
+    const { handleSubmit } = this.props;
+
     return (
       <form>
-        <div>
-          <label for='username'>Username</label>
-          <input type='text' id='username'/>
-        </div>
-        <div>
-          <label for='password'>Password</label>
-          <input type='text' id='password'/>
-        </div>
+        <fieldset>
+          <label>Email</label>
+          <Field
+            name="email"
+            type="text"
+            component="input"
+            autoComplete="none"
+          />
+        </fieldset>
+        <fieldset>
+          <label>Password</label>
+          <Field
+            name="password"
+            type="password"
+            component="input"
+            autoComplete="none"
+          />
+        </fieldset>
         <button type='button'>Sign Up</button>
       </form>
     );
   }
-
 }
 
-export default Signup;
+export default compose(
+  connect(null, actions),
+  reduxForm({ form: 'signup' })
+)(Signup);
